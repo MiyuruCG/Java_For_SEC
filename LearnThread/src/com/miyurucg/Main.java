@@ -1,8 +1,10 @@
 package com.miyurucg;
 
-public class Main {
+public class Main
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception
+    {
 
 
         Thread t1 = new Thread(()-> {
@@ -21,6 +23,11 @@ public class Main {
         t1.start();
         try{Thread.sleep(10);} catch(Exception e){System.out.println(e.getMessage());}
         t2.start();
+
+        t1.join();
+        t2.join();
+
+        System.out.println("Bye");
 
     }
 }
