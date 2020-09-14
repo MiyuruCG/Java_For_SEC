@@ -22,13 +22,13 @@ public class Main
 
 //        System.out.println(t1.getName());
 //        System.out.println(t2.getName());
-        t2.setPriority(Thread.MIN_PRIORITY);
-        t1.setPriority(Thread.MAX_PRIORITY);
+//        t2.setPriority(Thread.MIN_PRIORITY);
+//        t1.setPriority(Thread.MAX_PRIORITY);
 //        System.out.println(t1.getPriority());
 //        System.out.println(t2.getPriority());
 
         t1.start();
-        //try{Thread.sleep(10);} catch(Exception e){System.out.println(e.getMessage());}
+        try{Thread.sleep(10);} catch(Exception e){System.out.println(e.getMessage());}
         t2.start();
 
         t1.join();
