@@ -8,5 +8,5 @@ public class SampleController {
 
     public void sayHelloWorld(ActionEvent actionEvent) {
         helloWorld.setText("Hello World");
-    }
+    }x
 }
